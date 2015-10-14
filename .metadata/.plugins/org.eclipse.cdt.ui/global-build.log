@@ -1,0 +1,1029 @@
+14:34:19 **** Build of configuration Debug for project demo_severs ****
+make all 
+Building file: ../src/demo_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_severs.d" -MT"src/demo_severs.d" -o "src/demo_severs.o" "../src/demo_severs.c"
+Finished building: ../src/demo_severs.c
+ 
+Building target: demo_severs
+Invoking: GCC C Linker
+gcc  -o "demo_severs"  ./src/demo_severs.o   
+Finished building target: demo_severs
+ 
+14:34:24 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:43:01 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:48:49 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+Building file: ../src/demo_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_severs.d" -MT"src/demo_severs.d" -o "src/demo_severs.o" "../src/demo_severs.c"
+Finished building: ../src/demo_severs.c
+ 
+Building target: demo_severs
+Invoking: GCC C Linker
+gcc  -o "demo_severs"  ./src/demo_severs.o   
+Finished building target: demo_severs
+ 
+19:48:49 **** Build of configuration Debug for project example_client ****
+make all 
+Building file: ../src/example_client.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/example_client.d" -MT"src/example_client.d" -o "src/example_client.o" "../src/example_client.c"
+Finished building: ../src/example_client.c
+ 
+Building target: example_client
+Invoking: GCC C Linker
+gcc  -o "example_client"  ./src/example_client.o   
+Finished building target: example_client
+ 
+19:48:49 **** Build of configuration Debug for project example_severs ****
+make all 
+Building file: ../src/example_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/example_severs.d" -MT"src/example_severs.d" -o "src/example_severs.o" "../src/example_severs.c"
+Finished building: ../src/example_severs.c
+ 
+Building target: example_severs
+Invoking: GCC C Linker
+gcc  -o "example_severs"  ./src/example_severs.o   
+Finished building target: example_severs
+ 
+19:49:36 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:49:36 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:49:36 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+Building file: ../src/example_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/example_severs.d" -MT"src/example_severs.d" -o "src/example_severs.o" "../src/example_severs.c"
+../src/example_severs.c: In function ‘main’:
+../src/example_severs.c:55:36: warning: pointer targets in passing argument 3 of ‘accept’ differ in signedness [-Wpointer-sign]
+   if((new_fd=accept(sockfd,(struct sockaddr *)(&client_addr),&sin_size))==-1)
+                                    ^
+In file included from /usr/include/netinet/in.h:23:0,
+                 from /usr/include/netdb.h:27,
+                 from ../src/example_severs.c:7:
+/usr/include/x86_64-linux-gnu/sys/socket.h:243:12: note: expected ‘socklen_t * __restrict__’ but argument is of type ‘int *’
+ extern int accept (int __fd, __SOCKADDR_ARG __addr,
+            ^
+../src/example_severs.c:60:3: warning: implicit declaration of function ‘inet_ntoa’ [-Wimplicit-function-declaration]
+   fprintf(stderr,"Server get connection from %s\n",inet_ntoa(client_addr.sin_addr)); // 将网络地址转换成.字符串
+   ^
+../src/example_severs.c:60:3: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘int’ [-Wformat=]
+../src/example_severs.c:62:3: warning: implicit declaration of function ‘read’ [-Wimplicit-function-declaration]
+   if((nbytes=read(new_fd,buffer,1024))==-1)
+   ^
+../src/example_severs.c:72:3: warning: implicit declaration of function ‘close’ [-Wimplicit-function-declaration]
+   close(new_fd);
+   ^
+Finished building: ../src/example_severs.c
+ 
+Building target: example_severs
+Invoking: GCC C Linker
+gcc  -o "example_severs"  ./src/example_severs.o   
+Finished building target: example_severs
+ 
+19:52:42 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:52:42 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:52:43 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:52:49 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:52:49 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:52:49 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:53:26 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+Building file: ../src/demo_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_severs.d" -MT"src/demo_severs.d" -o "src/demo_severs.o" "../src/demo_severs.c"
+../src/demo_severs.c: In function ‘main’:
+../src/demo_severs.c:58:36: warning: pointer targets in passing argument 3 of ‘accept’ differ in signedness [-Wpointer-sign]
+   if((new_fd=accept(sockfd,(struct sockaddr *)(&client_addr),&sin_size))==-1)
+                                    ^
+In file included from /usr/include/netinet/in.h:23:0,
+                 from /usr/include/netdb.h:27,
+                 from ../src/demo_severs.c:7:
+/usr/include/x86_64-linux-gnu/sys/socket.h:243:12: note: expected ‘socklen_t * __restrict__’ but argument is of type ‘int *’
+ extern int accept (int __fd, __SOCKADDR_ARG __addr,
+            ^
+../src/demo_severs.c:63:3: warning: implicit declaration of function ‘inet_ntoa’ [-Wimplicit-function-declaration]
+   fprintf(stderr,"Server get connection from %s\n",inet_ntoa(client_addr.sin_addr)); // 将网络地址转换成.字符串
+   ^
+../src/demo_severs.c:63:3: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘int’ [-Wformat=]
+Finished building: ../src/demo_severs.c
+ 
+Building target: demo_severs
+Invoking: GCC C Linker
+gcc  -o "demo_severs"  ./src/demo_severs.o   
+Finished building target: demo_severs
+ 
+19:53:26 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:53:27 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:54:54 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:54:54 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:54:54 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:55:15 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+Building file: ../src/demo_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_severs.d" -MT"src/demo_severs.d" -o "src/demo_severs.o" "../src/demo_severs.c"
+../src/demo_severs.c: In function ‘main’:
+../src/demo_severs.c:60:36: warning: pointer targets in passing argument 3 of ‘accept’ differ in signedness [-Wpointer-sign]
+   if((new_fd=accept(sockfd,(struct sockaddr *)(&client_addr),&sin_size))==-1)
+                                    ^
+In file included from /usr/include/netinet/in.h:23:0,
+                 from /usr/include/netdb.h:27,
+                 from ../src/demo_severs.c:7:
+/usr/include/x86_64-linux-gnu/sys/socket.h:243:12: note: expected ‘socklen_t * __restrict__’ but argument is of type ‘int *’
+ extern int accept (int __fd, __SOCKADDR_ARG __addr,
+            ^
+../src/demo_severs.c:65:3: warning: implicit declaration of function ‘inet_ntoa’ [-Wimplicit-function-declaration]
+   fprintf(stderr,"Server get connection from %s\n",inet_ntoa(client_addr.sin_addr)); // 将网络地址转换成.字符串
+   ^
+../src/demo_severs.c:65:3: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘int’ [-Wformat=]
+Finished building: ../src/demo_severs.c
+ 
+Building target: demo_severs
+Invoking: GCC C Linker
+gcc  -o "demo_severs"  ./src/demo_severs.o   
+Finished building target: demo_severs
+ 
+19:55:15 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:55:16 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:56:47 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+Building file: ../src/demo_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_severs.d" -MT"src/demo_severs.d" -o "src/demo_severs.o" "../src/demo_severs.c"
+Finished building: ../src/demo_severs.c
+ 
+Building target: demo_severs
+Invoking: GCC C Linker
+gcc  -o "demo_severs"  ./src/demo_severs.o   
+Finished building target: demo_severs
+ 
+19:56:48 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+19:56:48 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:14:45 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+Building file: ../src/demo_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_severs.d" -MT"src/demo_severs.d" -o "src/demo_severs.o" "../src/demo_severs.c"
+../src/demo_severs.c: In function ‘main’:
+../src/demo_severs.c:71:4: warning: implicit declaration of function ‘reabuff’ [-Wimplicit-function-declaration]
+    reabuff(connfd);  //read bytes from client
+    ^
+../src/demo_severs.c:68:5: warning: ‘pid’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   if(0 == (pid == fork()))
+     ^
+Finished building: ../src/demo_severs.c
+ 
+Building target: demo_severs
+Invoking: GCC C Linker
+gcc  -o "demo_severs"  ./src/demo_severs.o   
+./src/demo_severs.o：在函数‘main’中：
+/home/deepin/workspace/demo_severs/Debug/../src/demo_severs.c:71：对‘reabuff’未定义的引用
+collect2: error: ld returned 1 exit status
+make: *** [demo_severs] 错误 1
+20:14:45 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:14:45 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:16:17 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+Building file: ../src/demo_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_severs.d" -MT"src/demo_severs.d" -o "src/demo_severs.o" "../src/demo_severs.c"
+../src/demo_severs.c: In function ‘main’:
+../src/demo_severs.c:72:4: warning: implicit declaration of function ‘reabuff’ [-Wimplicit-function-declaration]
+    reabuff(connfd);  //read bytes from client
+    ^
+Finished building: ../src/demo_severs.c
+ 
+Building target: demo_severs
+Invoking: GCC C Linker
+gcc  -o "demo_severs"  ./src/demo_severs.o   
+./src/demo_severs.o：在函数‘main’中：
+/home/deepin/workspace/demo_severs/Debug/../src/demo_severs.c:72：对‘reabuff’未定义的引用
+collect2: error: ld returned 1 exit status
+make: *** [demo_severs] 错误 1
+20:16:17 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:16:18 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:16:50 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+Building file: ../src/demo_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_severs.d" -MT"src/demo_severs.d" -o "src/demo_severs.o" "../src/demo_severs.c"
+Finished building: ../src/demo_severs.c
+ 
+Building target: demo_severs
+Invoking: GCC C Linker
+gcc  -o "demo_severs"  ./src/demo_severs.o   
+Finished building target: demo_severs
+ 
+20:16:50 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:16:50 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:16:57 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:26:27 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+Building file: ../src/demo_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_severs.d" -MT"src/demo_severs.d" -o "src/demo_severs.o" "../src/demo_severs.c"
+Finished building: ../src/demo_severs.c
+ 
+Building target: demo_severs
+Invoking: GCC C Linker
+gcc  -o "demo_severs"  ./src/demo_severs.o   
+Finished building target: demo_severs
+ 
+20:27:23 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:27:23 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:27:23 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+Building file: ../src/example_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/example_severs.d" -MT"src/example_severs.d" -o "src/example_severs.o" "../src/example_severs.c"
+../src/example_severs.c: In function ‘main’:
+../src/example_severs.c:58:36: warning: pointer targets in passing argument 3 of ‘accept’ differ in signedness [-Wpointer-sign]
+   if((new_fd=accept(sockfd,(struct sockaddr *)(&client_addr),&sin_size))==-1)
+                                    ^
+In file included from /usr/include/netinet/in.h:23:0,
+                 from /usr/include/netdb.h:27,
+                 from ../src/example_severs.c:7:
+/usr/include/x86_64-linux-gnu/sys/socket.h:243:12: note: expected ‘socklen_t * __restrict__’ but argument is of type ‘int *’
+ extern int accept (int __fd, __SOCKADDR_ARG __addr,
+            ^
+../src/example_severs.c:63:3: warning: implicit declaration of function ‘inet_ntoa’ [-Wimplicit-function-declaration]
+   fprintf(stderr,"Server get connection from %s\n",inet_ntoa(client_addr.sin_addr)); // 将网络地址转换成.字符串
+   ^
+../src/example_severs.c:63:3: warning: format ‘%s’ expects argument of type ‘char *’, but argument 3 has type ‘int’ [-Wformat=]
+Finished building: ../src/example_severs.c
+ 
+Building target: example_severs
+Invoking: GCC C Linker
+gcc  -o "example_severs"  ./src/example_severs.o   
+Finished building target: example_severs
+ 
+20:27:29 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:32:50 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+Building file: ../src/demo_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_severs.d" -MT"src/demo_severs.d" -o "src/demo_severs.o" "../src/demo_severs.c"
+Finished building: ../src/demo_severs.c
+ 
+Building target: demo_severs
+Invoking: GCC C Linker
+gcc  -o "demo_severs"  ./src/demo_severs.o   
+Finished building target: demo_severs
+ 
+20:32:50 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:32:50 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:32:53 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:36:11 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:36:11 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:36:11 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:36:15 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:40:13 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+Building file: ../src/demo_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_severs.d" -MT"src/demo_severs.d" -o "src/demo_severs.o" "../src/demo_severs.c"
+Finished building: ../src/demo_severs.c
+ 
+Building target: demo_severs
+Invoking: GCC C Linker
+gcc  -o "demo_severs"  ./src/demo_severs.o   
+Finished building target: demo_severs
+ 
+20:40:13 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:40:13 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:40:15 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:42:59 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:42:59 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:42:59 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:43:01 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:47:16 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:47:16 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:47:16 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:47:19 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+Building file: ../src/demo_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_severs.d" -MT"src/demo_severs.d" -o "src/demo_severs.o" "../src/demo_severs.c"
+Finished building: ../src/demo_severs.c
+ 
+Building target: demo_severs
+Invoking: GCC C Linker
+gcc  -o "demo_severs"  ./src/demo_severs.o   
+Finished building target: demo_severs
+ 
+20:48:35 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+Building file: ../src/demo_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_severs.d" -MT"src/demo_severs.d" -o "src/demo_severs.o" "../src/demo_severs.c"
+Finished building: ../src/demo_severs.c
+ 
+Building target: demo_severs
+Invoking: GCC C Linker
+gcc  -o "demo_severs"  ./src/demo_severs.o   
+Finished building target: demo_severs
+ 
+20:48:36 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:48:36 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:48:37 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:50:24 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+Building file: ../src/demo_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_severs.d" -MT"src/demo_severs.d" -o "src/demo_severs.o" "../src/demo_severs.c"
+Finished building: ../src/demo_severs.c
+ 
+Building target: demo_severs
+Invoking: GCC C Linker
+gcc  -o "demo_severs"  ./src/demo_severs.o   
+Finished building target: demo_severs
+ 
+20:50:24 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:50:25 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:50:25 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:51:26 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+Building file: ../src/demo_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_severs.d" -MT"src/demo_severs.d" -o "src/demo_severs.o" "../src/demo_severs.c"
+Finished building: ../src/demo_severs.c
+ 
+Building target: demo_severs
+Invoking: GCC C Linker
+gcc  -o "demo_severs"  ./src/demo_severs.o   
+Finished building target: demo_severs
+ 
+20:53:25 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+Building file: ../src/demo_severs.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_severs.d" -MT"src/demo_severs.d" -o "src/demo_severs.o" "../src/demo_severs.c"
+Finished building: ../src/demo_severs.c
+ 
+Building target: demo_severs
+Invoking: GCC C Linker
+gcc  -o "demo_severs"  ./src/demo_severs.o   
+Finished building target: demo_severs
+ 
+20:53:25 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:53:25 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:53:27 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+20:53:37 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:22:13 **** Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+Finished building: ../src/demo_fork.c
+ 
+Building target: demo_fork
+Invoking: GCC C Linker
+gcc  -o "demo_fork"  ./src/demo_fork.o   
+Finished building target: demo_fork
+ 
+21:22:13 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:22:14 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:22:14 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:22:16 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:41:23 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+../src/demo_fork.c: In function ‘main’:
+../src/demo_fork.c:27:15: error: storage size of ‘arg’ isn’t known
+  union semun  arg;       // parameter for semaphore set
+               ^
+../src/demo_fork.c:42:3: warning: implicit declaration of function ‘pritnf’ [-Wimplicit-function-declaration]
+   pritnf("i'm child!\n");
+   ^
+../src/demo_fork.c:27:15: warning: unused variable ‘arg’ [-Wunused-variable]
+  union semun  arg;       // parameter for semaphore set
+               ^
+make: *** [src/demo_fork.o] 错误 1
+15:41:24 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:41:24 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:41:25 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:47:46 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+../src/demo_fork.c: In function ‘main’:
+../src/demo_fork.c:27:15: error: storage size of ‘arg’ isn’t known
+  union semun  arg;       // parameter for semaphore set
+               ^
+../src/demo_fork.c:42:3: warning: implicit declaration of function ‘pritnf’ [-Wimplicit-function-declaration]
+   pritnf("i'm child!\n");
+   ^
+../src/demo_fork.c:27:15: warning: unused variable ‘arg’ [-Wunused-variable]
+  union semun  arg;       // parameter for semaphore set
+               ^
+make: *** [src/demo_fork.o] 错误 1
+15:47:46 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:47:46 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:47:46 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:47:51 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+../src/demo_fork.c: In function ‘main’:
+../src/demo_fork.c:27:15: error: storage size of ‘arg’ isn’t known
+  union semun  arg;       // parameter for semaphore set
+               ^
+../src/demo_fork.c:42:3: warning: implicit declaration of function ‘pritnf’ [-Wimplicit-function-declaration]
+   pritnf("i'm child!\n");
+   ^
+../src/demo_fork.c:27:15: warning: unused variable ‘arg’ [-Wunused-variable]
+  union semun  arg;       // parameter for semaphore set
+               ^
+make: *** [src/demo_fork.o] 错误 1
+15:47:51 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:47:52 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:47:52 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:47:53 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+../src/demo_fork.c: In function ‘main’:
+../src/demo_fork.c:27:15: error: storage size of ‘arg’ isn’t known
+  union semun  arg;       // parameter for semaphore set
+               ^
+../src/demo_fork.c:42:3: warning: implicit declaration of function ‘pritnf’ [-Wimplicit-function-declaration]
+   pritnf("i'm child!\n");
+   ^
+../src/demo_fork.c:27:15: warning: unused variable ‘arg’ [-Wunused-variable]
+  union semun  arg;       // parameter for semaphore set
+               ^
+make: *** [src/demo_fork.o] 错误 1
+15:47:53 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:47:54 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:47:54 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:55:41 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+Finished building: ../src/demo_fork.c
+ 
+Building target: demo_fork
+Invoking: GCC C Linker
+gcc  -o "demo_fork"  ./src/demo_fork.o   
+Finished building target: demo_fork
+ 
+15:55:42 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:55:42 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:55:42 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:56:15 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:56:15 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:56:15 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:56:15 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:56:24 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+Finished building: ../src/demo_fork.c
+ 
+Building target: demo_fork
+Invoking: GCC C Linker
+gcc  -o "demo_fork"  ./src/demo_fork.o   
+Finished building target: demo_fork
+ 
+15:56:54 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+Finished building: ../src/demo_fork.c
+ 
+Building target: demo_fork
+Invoking: GCC C Linker
+gcc  -o "demo_fork"  ./src/demo_fork.o   
+Finished building target: demo_fork
+ 
+15:56:54 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:56:54 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:56:54 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:56:57 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:57:55 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+Finished building: ../src/demo_fork.c
+ 
+Building target: demo_fork
+Invoking: GCC C Linker
+gcc  -o "demo_fork"  ./src/demo_fork.o   
+Finished building target: demo_fork
+ 
+15:57:55 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:57:56 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:57:56 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:58:10 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:58:10 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:58:10 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:58:10 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+15:58:11 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:03:12 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+Finished building: ../src/demo_fork.c
+ 
+Building target: demo_fork
+Invoking: GCC C Linker
+gcc  -o "demo_fork"  ./src/demo_fork.o   
+Finished building target: demo_fork
+ 
+16:03:12 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:03:12 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:03:12 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:03:47 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+Finished building: ../src/demo_fork.c
+ 
+Building target: demo_fork
+Invoking: GCC C Linker
+gcc  -o "demo_fork"  ./src/demo_fork.o   
+Finished building target: demo_fork
+ 
+16:03:47 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:03:47 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:03:47 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:05:28 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:05:28 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:05:28 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:05:28 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:05:31 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+Finished building: ../src/demo_fork.c
+ 
+Building target: demo_fork
+Invoking: GCC C Linker
+gcc  -o "demo_fork"  ./src/demo_fork.o   
+Finished building target: demo_fork
+ 
+16:05:48 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:05:48 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:05:48 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:05:49 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:05:51 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+Finished building: ../src/demo_fork.c
+ 
+Building target: demo_fork
+Invoking: GCC C Linker
+gcc  -o "demo_fork"  ./src/demo_fork.o   
+Finished building target: demo_fork
+ 
+16:10:12 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:10:12 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:10:12 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:10:12 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:10:14 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+Finished building: ../src/demo_fork.c
+ 
+Building target: demo_fork
+Invoking: GCC C Linker
+gcc  -o "demo_fork"  ./src/demo_fork.o   
+Finished building target: demo_fork
+ 
+16:12:12 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+../src/demo_fork.c: In function ‘main’:
+../src/demo_fork.c:35:15: warning: variable ‘arg’ set but not used [-Wunused-but-set-variable]
+  union semun  arg;       // parameter for initialize semaphore vaule
+               ^
+Finished building: ../src/demo_fork.c
+ 
+Building target: demo_fork
+Invoking: GCC C Linker
+gcc  -o "demo_fork"  ./src/demo_fork.o   
+Finished building target: demo_fork
+ 
+16:12:12 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:12:12 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:12:13 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:12:14 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:14:21 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+../src/demo_fork.c: In function ‘main’:
+../src/demo_fork.c:35:15: warning: variable ‘arg’ set but not used [-Wunused-but-set-variable]
+  union semun  arg;       // parameter for initialize semaphore vaule
+               ^
+Finished building: ../src/demo_fork.c
+ 
+Building target: demo_fork
+Invoking: GCC C Linker
+gcc  -o "demo_fork"  ./src/demo_fork.o   
+Finished building target: demo_fork
+ 
+16:14:21 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:14:21 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:14:21 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+16:14:23 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:12:18 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:12:18 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:12:18 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:12:18 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:12:19 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:21:56 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:21:56 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:21:56 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:21:56 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:21:59 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+../src/demo_fork.c: In function ‘main’:
+../src/demo_fork.c:35:15: warning: variable ‘arg’ set but not used [-Wunused-but-set-variable]
+  union semun  arg;          // parameter for initialize semaphore vaule
+               ^
+Finished building: ../src/demo_fork.c
+ 
+Building target: demo_fork
+Invoking: GCC C Linker
+gcc  -o "demo_fork"  ./src/demo_fork.o   
+Finished building target: demo_fork
+ 
+21:22:08 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:22:08 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:22:08 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:22:08 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:22:11 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+../src/demo_fork.c: In function ‘main’:
+../src/demo_fork.c:35:15: warning: variable ‘arg’ set but not used [-Wunused-but-set-variable]
+  union semun  arg;          // parameter for initialize semaphore vaule
+               ^
+Finished building: ../src/demo_fork.c
+ 
+Building target: demo_fork
+Invoking: GCC C Linker
+gcc  -o "demo_fork"  ./src/demo_fork.o   
+Finished building target: demo_fork
+ 
+21:25:05 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+../src/demo_fork.c: In function ‘main’:
+../src/demo_fork.c:35:15: warning: variable ‘arg’ set but not used [-Wunused-but-set-variable]
+  union semun  arg;          // parameter for initialize semaphore vaule
+               ^
+Finished building: ../src/demo_fork.c
+ 
+Building target: demo_fork
+Invoking: GCC C Linker
+gcc  -o "demo_fork"  ./src/demo_fork.o   
+Finished building target: demo_fork
+ 
+21:25:05 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:25:05 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:25:05 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:25:38 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+Finished building: ../src/demo_fork.c
+ 
+Building target: demo_fork
+Invoking: GCC C Linker
+gcc  -o "demo_fork"  ./src/demo_fork.o   
+Finished building target: demo_fork
+ 
+21:25:38 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:25:38 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:25:39 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:25:46 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+Building file: ../src/demo_fork.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/demo_fork.d" -MT"src/demo_fork.d" -o "src/demo_fork.o" "../src/demo_fork.c"
+../src/demo_fork.c: In function ‘main’:
+../src/demo_fork.c:35:15: warning: variable ‘arg’ set but not used [-Wunused-but-set-variable]
+  union semun  arg;          // parameter for initialize semaphore vaule
+               ^
+Finished building: ../src/demo_fork.c
+ 
+Building target: demo_fork
+Invoking: GCC C Linker
+gcc  -o "demo_fork"  ./src/demo_fork.o   
+Finished building target: demo_fork
+ 
+21:25:46 **** Incremental Build of configuration Debug for project demo_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:25:46 **** Incremental Build of configuration Debug for project example_client ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:25:46 **** Incremental Build of configuration Debug for project example_severs ****
+make all 
+make: 没有什么可以做的为 `all'。
+21:25:48 **** Incremental Build of configuration Debug for project demo_fork ****
+make all 
+make: 没有什么可以做的为 `all'。

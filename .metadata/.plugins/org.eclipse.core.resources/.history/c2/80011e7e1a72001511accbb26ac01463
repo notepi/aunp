@@ -1,0 +1,28 @@
+/*
+ ============================================================================
+ Name        : demo_fork.c
+ Author      : panpeng
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/ipc.h>
+
+const char *ftpath	="home";
+#define		PROJ_ID		1			//ftok的项目
+
+
+int main(void)
+{
+	key_t		ipc_key;
+
+
+	ipc_key = ftok(ftpath, PROJ_ID);		//creat an ipc key
+
+
+}
