@@ -19,6 +19,7 @@
 
 const char *ftpath	="/home/deepin/workspace/file";
 #define		PROJ_ID		1			// ftok的项目数
+#define		jk			"test"
 
 union semun
 {
