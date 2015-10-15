@@ -1,3 +1,4 @@
 #eclipse-cdt
 /*/Debug/*
 /.metadata/*
+*.cproject
