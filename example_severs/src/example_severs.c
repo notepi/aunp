@@ -9,7 +9,8 @@
 #include <netinet/in.h>
 #include <sys/socket.h>
 #include <unistd.h>
-
+#include <sys/socket.h>
+#include <arpa/inet.h>
 
 
 #define portnumber 3333
@@ -19,7 +20,7 @@ int main(int argc, char *argv[])
 	int sockfd,new_fd;
 	struct sockaddr_in server_addr;
 	struct sockaddr_in client_addr;
-	int sin_size;
+	socklen_t sin_size;
 	int nbytes;
 	char buffer[1024];
 
